@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,700;0,900;1,700;1,900&display=swap');
+nav{
+    width: 100vw;
+    height: 78px;
+    padding: 20px 50px;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: "Inter", Arial, sans-serif;
+    position: relative;
+    z-index: 4;
+}
+
+nav #service-lists{
+    display: none;
+    gap: 20px;
+    list-style-type: none;
+    cursor: pointer;
+    font-weight: 600;
+    flex-direction: column;
+    position: absolute;
+    width: 200px;
+    background-color: #fff;
+    padding-top:10px;
+    top:60px;
+    transition: all .5s;
+    animation: slideDown 500ms;
+    color: rgb(66, 66, 66);
+    font-size: 14px;
+}
+
+nav #service-lists:hover{
+    display:flex!;
+}
+
+nav #service-header:hover #service-lists{
+    display:flex!important;
+ 
+}
+
+FontAwesomeIcon{
+    font-size: 10px;
+}
+
+nav #service-header{
+    font-weight: 700;
+    cursor: pointer;
+    display: block;
+    padding: 10px 0px;
+    color:#f5f7f9;
+    font-size: 14.4px;
+    font-family: 'lato', 'Metropolis';
+}
+
+nav #service-lists li{
+    border-bottom: 1px solid grey;
+    width: 100%;
+    height: 20px;
+    display: flex;
+    padding: 0px 0px 30px 20px;
+}
+
+
+@keyframes slideDown {
+    0%{
+        opacity: 0;
+        transform: translateY(-20px);
+    }100%{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+nav ul li{
+    transition: all .3s;
+}
+
+nav ul li:hover{
+    color: rebeccapurple;
+}
+
+nav .Logo{
+    font-size: 24px;
+    font-weight: bold;
+    color: rebeccapurple;
+    z-index: 10;
+}
+
+nav button{
+    height: 46px;
+    width: 152.17px;
+    border: none;
+    background-color: #333333;
+    color: #fff;
+    font-weight: 600;
+    font-size: 14px;
+    font-family: "lato", "Montserrat", Arial, Helvetica, sans-serif;
+    cursor: pointer;
+}
+
+nav img{
+    height: 36.83px;
+
+    z-index: 10;
+}
